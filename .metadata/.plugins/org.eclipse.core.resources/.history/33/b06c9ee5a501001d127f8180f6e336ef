@@ -1,0 +1,38 @@
+package firstproject;
+
+class HouseEx{
+	String mete; 
+	int floor; 
+		
+	HouseEx(){
+		this.mete = "0";
+		this.floor = 0; 
+	}
+	
+	HouseEx(String mete){
+		this.mete = mete;
+		this.floor = 2;
+	}
+	HouseEx(String mete, int floor){
+		this.mete = mete;
+		this.floor = floor;
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		HouseEx house1 = new HouseEx();
+		HouseEx house2 = new HouseEx("나무");
+		HouseEx house3 = new HouseEx("나무",2);
+	
+		System.out.println(house1.mete +" "+house1.floor);
+		System.out.println(house2.mete +" "+house2.floor);
+		System.out.println(house3.mete +" "+house3.floor);
+	
+	}
+}
+
+
+
+
+

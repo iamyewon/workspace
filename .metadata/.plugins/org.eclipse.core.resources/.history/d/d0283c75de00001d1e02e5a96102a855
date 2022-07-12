@@ -1,0 +1,14 @@
+package firstproject;
+
+public class RentInfo {
+	int idx; //網溥除 螃棺 賃廓簞
+	String name; //援陛 網溥鬲朝雖
+	String deadline; //網溥除晦除
+	int money; //網溥陞陽 魚 絲 
+	String title; //網溥除 薯跡 
+	. 
+	
+	
+	
+	
+}

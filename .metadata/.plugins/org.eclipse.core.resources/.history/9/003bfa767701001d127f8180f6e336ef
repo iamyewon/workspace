@@ -1,0 +1,16 @@
+package firstproject;
+
+public class ScoreManager2 {
+	Student[] std; //클래스 변수
+	// 클래스 변수는 이 변수를 가지고 있는 클래스가 생성되어야만 사용가능하다 
+	// => std를 사용하기 위해서는 ScoreManager2 를 생성(new)해야 사용가능하다
+	//만약에 메서드(main)안에서 정의한다면(Student[] std;) 
+	// new ScoreManager 를 안해도 된다.
+	
+	public static void main(String[] args) {
+		Student[] std = new Student[100]; //에러 없음 
+	}
+	
+	
+	
+}

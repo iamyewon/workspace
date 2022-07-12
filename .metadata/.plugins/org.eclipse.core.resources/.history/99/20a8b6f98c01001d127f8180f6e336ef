@@ -1,0 +1,10 @@
+package firstproject;
+
+public class HDcarExam {
+	public static void main(String[] args) {
+		
+		HDcar myCar = new HDcar(); //인스턴스화 - 생성
+		
+		System.out.println(myCar.model);
+	}
+}

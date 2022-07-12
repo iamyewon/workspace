@@ -1,0 +1,30 @@
+package firstproject;
+
+public class ScoreManager {
+
+	public static void main(String[] args) {
+		
+		String[] cls= {"학번","이름","국어","영어","수학"};
+		for(int i=0;i<2;i++) { //줄(행)
+			for(int j=0;j<schoolScore[0].length;j++) { //줄(칸=열)
+				System.out.println((i+1)+"번째 학생의 "+cls[j]+" 를 입력하세요");
+				schoolScore[i][j]=sc.nextInt();
+		
+		for(int i=0;i<schoolScore.length;i++) { //줄(행)
+			for(int j=0;j<schoolScore[0].length;j++) { //줄(칸=열)
+				System.out.println((i+1)+"번째 학생의 "+cls[j]+" 점수를 입력하세요");
+				schoolScore[i][j]=sc.nextInt();
+				
+			}
+		}
+		System.out.println(Arrays.toString(schoolScore[0]));
+		System.out.println(Arrays.toString(schoolScore[1]));
+		System.out.println(Arrays.toString(schoolScore[2]));
+		
+		
+		
+		
+
+	}
+
+}

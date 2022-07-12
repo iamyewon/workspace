@@ -1,0 +1,23 @@
+package firstproject;
+
+public class CarTest {
+	public static void main(String[] args) {
+		
+		Car c1 = new Car(); //같은 폴더(package)에 있으니까 가져와서 쓸 수 있음.. 그냥 막 가져다 쓰면 된다.
+		c1.WheelCount=4;
+		c1.color="red";
+		c1.name="머스탱";
+		
+		Car c2 = new Car();
+		c2.WheelCount=8;
+		c2.color="국방색";
+		c2.name="육공트럭";
+		
+		// 자바에서 우리가 작성한 클래스는 생성을 여러개 할 수 있는 일종의 틀이다.
+		// new 를 통해서 우리는 클래스를 사용할 수 있는 상태로 만든다. 
+		
+		
+		
+		
+	}
+}

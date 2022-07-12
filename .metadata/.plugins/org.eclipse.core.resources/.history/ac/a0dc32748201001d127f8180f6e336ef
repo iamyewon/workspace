@@ -1,0 +1,32 @@
+package firstproject;
+
+
+class Aircon{
+	int power;
+	
+}
+
+//========================================= 따로 끊어서 클래스 하나 더 만들수 o
+
+public class EnumEx1 {
+public static void main(String[] args) {
+	//상수 = 변하지 않는 수      <---> 변수 - 변수는 값을 넣을 수 있는 공간
+	//ex)100, "안녕"  등등..
+	//상수는 항상 고정되어 있는 값...
+	
+	Aircon a = new Aircon();
+	int ON = 1;
+	int OFF = 0;
+	
+	
+	a.power=1; // 외부로부터 입력받는다고 가정 
+	if(a.power==1) {
+		System.out.println("전원 켜짐");
+	}else if(a.power==0) {
+		System.out.println("전원 꺼짐");
+	}
+	
+	
+	
+}
+}

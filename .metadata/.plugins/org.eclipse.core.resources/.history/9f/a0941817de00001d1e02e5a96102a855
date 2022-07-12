@@ -1,0 +1,42 @@
+package firstproject;
+
+import java.util.Scanner;
+
+public class Student {
+	//클래스 - 개념적인 또는 실질적인 모든 것을 구현한 것 
+	Scanner sc = new Scanner(System.in);
+	
+	
+	
+	int number; // 학번
+	String name; // 이름
+	int korean; // 국어점수
+	int English; //영어점수
+	int math;// 수학점수
+	
+	String[] cls= {"국어","영어","수학"};
+	for(int i=0;i<schoolScore.length;i++) { //줄(행)
+		for(int j=0;j<schoolScore[0].length;j++) { //줄(칸=열)
+//			System.out.println((i+1)+"번째 학생의 국어점수를 입력하세요");
+//			schoolScore[i][j]=sc.nextInt();
+//			System.out.println((i+1)+"번째 학생의 영어점수를 입력하세요");
+//			schoolScore[i][j]=sc.nextInt();
+//			System.out.println((i+1)+"번째 학생의 수학점수를 입력하세요");  이러면 안됨.............
+			
+			System.out.println((i+1)+"번째 학생의 "+cls[j]+" 점수를 입력하세요");
+			schoolScore[i][j]=sc.nextInt();
+			
+		}
+	}
+	System.out.println(Arrays.toString(schoolScore[0]));
+	System.out.println(Arrays.toString(schoolScore[1]));
+	System.out.println(Arrays.toString(schoolScore[2]));
+	
+	
+	
+	
+	
+	
+	
+}
+//한명에 대한 평균(국영수 평균), 총합, 이름, 학번, 각점수

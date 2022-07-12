@@ -1,0 +1,9 @@
+package firstproject;
+
+public class HDcarExam {
+	public static void main(String[] args) {
+		HDcar myCar = new HDcar();
+		System.out.println(myCar.model);
+		
+	}
+}

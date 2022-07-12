@@ -1,0 +1,33 @@
+package firstproject;
+
+public class CarTest {
+	public static void main(String[] args) {
+		
+		Car c1 = new Car(); //같은 폴더(package)에 있으니까 가져와서 쓸 수 있음.. 그냥 막 가져다 쓰면 된다.
+		c1.WheelCount=4;
+		c1.color="red";
+		c1.name="머스탱";
+		
+		Car c2 = new Car();
+		c2.WheelCount=8;
+		c2.color="국방색";
+		c2.name="육공트럭";
+		
+
+		
+		// 자바에서 우리가 작성한 클래스는 생성을 여러개 할 수 있는 일종의 틀이다. (ex....붕어빵틀)
+		// new 를 통해서 우리는 클래스를 사용할 수 있는 상태로 만든다. (재료넣고 구워만드는것..?)
+		
+		Car[] cars = new Car[3]; // 배열은 공간할당을 하기 위해서 new를 사용한다. new는 무조건 메모리와 관련있다. 
+		//문제 차량 3개를 생성해서 값을넣고 출력하세요. 
+		//Car[] cars = new Car[3];는 Car cs1 / Car cs2 / Car cs3 이렇게 공간만 생긴거...
+		
+		Car cs1 = new Car();
+		cs1.WheelCount=4;
+		cs1.color="red";
+		cs1.name="머스탱";
+		
+		int i; //i(변수)를 먼저 정의 했고,, 같이할수도 o
+		i=10; // 
+	}
+}
