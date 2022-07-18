@@ -1,0 +1,12 @@
+package firstproject;
+
+class BMITest {
+
+}
+
+
+
+public class BMITest{
+	BMI bmi = new BMI();
+	bmi.calc("최홍석",176, 80); //최홍석의 bmi 지수는 xxx입니다. 라고 출력하기
+}

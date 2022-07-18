@@ -1,0 +1,13 @@
+package firstproject3;
+
+public class Book {
+
+	
+}
+
+
+	public static void main(String[] args) {
+		Book b = new Book();
+		b.insertTitle("오만과 편견");
+	}
+		

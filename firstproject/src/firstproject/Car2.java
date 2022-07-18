@@ -15,7 +15,7 @@ public class Car2 {
 		Car2 c = new Car2(ee, "∏”Ω∫≈ ");
 		System.out.println(c.e.cc);
 		System.out.println(c.name);
-	}
+	} 
 
 
 }

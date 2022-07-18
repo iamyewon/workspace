@@ -1,0 +1,22 @@
+package firstproject3;
+
+public class ParameterEx {
+	void sum(int ... i) {
+		//sum(10) <= int 타입의 매개변수의 개수를 무한대.
+		int s = 0;
+		for(int x=0;x<i.length;x++) { //배열로 취급하기때문에 length를 씀.
+			s=s+i[x]; // 배열로 취급.... 
+		}
+		System.out.println(s);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		ParameterEx pe = new ParameterEx();
+		pe.sum(10,20,30,40,50);
+		pe.sum(20);
+		//메소드는 하나뿐인데 값을 여러개 넣어줄 수 있는.....?
+	}
+	
+}

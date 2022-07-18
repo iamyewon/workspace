@@ -1,0 +1,13 @@
+package firstproject2;
+
+public class MethodEx6 {
+	public static void main(String[] args) {
+		MethodEx6 me = new MethodEx6();
+		me.charAt("abcde",0);
+		
+		//원래라면 me <= 문자열이어야 한다. 
+		//그래서 직접 넣어줌.
+		
+		
+	}
+}

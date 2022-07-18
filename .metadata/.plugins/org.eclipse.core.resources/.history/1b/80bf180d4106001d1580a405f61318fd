@@ -1,0 +1,40 @@
+package firstproject2;
+
+class Bonus{
+	int bonus;
+	int income;
+	
+	
+	
+	void setBonus(int b) { // 보너스 세팅..  ????
+		bonus = b;	
+	}
+	void setIncome(int i) { // 연봉 세팅..  ????
+		income = i;
+	}
+	void printIncome() {
+		System.out.println(income+bonus);
+	}
+	
+
+}
+
+
+public class BonusTest {
+	public static void main(String[] args) {
+		// 3개 만듬
+		// 보너스가 몇프로 인지 입력 (10) <= 10%를 의미
+		// 보너스 세팅하는 메서드 1개
+		
+		// 연봉 세팅하는 메서드 (5000) <= 5000만원
+		
+		// 연봉, 연봉 기준 보너스 출력하는 메서드 () <== 내용 필요 없음.
+		
+		Bonus per = new Bonus();
+		per.setBonus(10); //10퍼센트.....?
+		per.setIncome(5000); // 5000만원.....?
+
+	}
+}
+
+

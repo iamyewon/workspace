@@ -1,0 +1,12 @@
+package firstproject2;
+
+public class MethodEx5 {
+	public static void main(String[] args) {
+		String str = "abcdefg";
+		String str2 = new String("abcdefg");
+//		String str3 = new String();
+//		str3 = "abcdefg" str.set? text? 없어서 직접넣을수있는데 안하기로.
+		
+		str
+	}
+}

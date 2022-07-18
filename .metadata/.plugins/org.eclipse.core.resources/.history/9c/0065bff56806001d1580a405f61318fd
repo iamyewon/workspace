@@ -1,0 +1,24 @@
+package firstproject3;
+
+class Gugu{
+	//int Num;
+	
+	void setNum(int x, int z) {
+		for(int i=1;i<=z;i++) {
+			
+		}
+	}
+	void showData();{
+		System.out.println();
+	}
+}
+
+
+
+public class Gugudan {
+	public static void main(String[] args) {
+		Gugu g = new Gugu();
+		g.setNum(2,5); //2단을 x5까지
+		g.showData();
+	}
+}

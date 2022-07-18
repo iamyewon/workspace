@@ -1,0 +1,13 @@
+package firstproject;
+
+public class Rect { // 사각형 클래스
+	int width;
+	int height;
+	
+	void setSize(int w, int h) { //받아온 값 w,h를
+		this.width=w; 			// 클래스 변수 width와 height에 넣어주는 메서드.
+		this.height=h;			// 처음에 이렇게 적고 this 는 헷갈리면 없어도 된다고 뺌 .. 
+	}
+	
+	
+}
