@@ -1,0 +1,6 @@
+package project719;
+
+public class Order {
+	Product ptoduct;
+	User user;
+}

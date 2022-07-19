@@ -1,0 +1,12 @@
+package project719;
+
+public class Order {
+	Product prooduct;
+	User user;
+	int orderNum;
+	int allPrice;
+	
+	
+	
+	
+}

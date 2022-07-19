@@ -1,0 +1,16 @@
+package project719;
+
+public class Product {
+	String productName;
+	int productPrice;
+	double productWeight;
+	int productStock;
+	
+	public Product() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

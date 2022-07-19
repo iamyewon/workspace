@@ -1,0 +1,21 @@
+package project719;
+
+public class Order {
+	Product product;
+	User user;
+	int orderNum;
+	int allPrice;
+	
+	public Order() {
+		this(new Product(),2,5000);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Order o = new Order();
+		o.printOrderInfo();
+	}
+	
+	
+}

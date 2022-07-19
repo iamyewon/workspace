@@ -1,0 +1,43 @@
+package project719;
+
+public class Product {
+	private String productName;
+	int productPrice;
+	String productWeight;
+	int productStock;
+	
+	
+	public void setProductName(String productName) {
+		//권한 추가할 수 있음 .. 제어 할수있음.			
+		this.productName = productName;
+	}
+
+	public void setProductWeight(String productWeight) {
+		this.productWeight = productWeight;
+	}
+	
+	public void setProductPrice(int productPrice) {
+		this.productPrice = productPrice;
+	}
+
+	public void setProductStock(int productStock) {
+		this.productStock = productStock;
+	}
+
+
+	public static void main(String[] args) {
+		Product p = new Product();
+		p.setProductName("하리보 골드베렌");
+		p.setProductWeight("100g");
+		p.setProductPrice(2000);
+		p.setProductStock(7);
+		
+		Product p2 = new Product();
+		p2.setProductName();
+		p2.setProductWeight(productWeight);
+		p2.setProductPrice(productPrice);
+		p2.setProductStock(productStock);
+		
+		Product p3 = new Product();
+	}
+}

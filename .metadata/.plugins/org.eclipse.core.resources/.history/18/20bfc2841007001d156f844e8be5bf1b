@@ -1,0 +1,32 @@
+package project719;
+
+public class User {
+	String userId;
+	String userName;
+	String userAdress;
+	String userPhoneNum;
+	
+	public void user(String userId, String userName, String userAdress, String userPhoneNum) {
+		this.userId=userId;
+		this.userName=userName;
+		this.userAdress=userAdress;
+		this.userPhoneNum=userPhoneNum;
+		
+	}
+	
+	
+	public void printUserInfo() {
+		System.out.println(userId+userName+userAdress+userPhoneNum);
+	}
+	
+	public static void main(String[] args) {
+		User user = new User();
+		user.userId = "yeni";
+		user.userName = "±è¿¹¿ø";
+		user.userAdress = "¿¤ÀÌÁî";
+		user.userPhoneNum = "010-2742-2695";
+		user.printUserInfo();
+	}
+	
+	
+}

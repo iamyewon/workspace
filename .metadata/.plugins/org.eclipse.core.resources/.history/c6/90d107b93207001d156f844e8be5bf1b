@@ -1,0 +1,32 @@
+package project719;
+
+public class Vending {
+		
+		void calcChange(String drink, int money) {
+		if(drink.equals("코카콜라")) { //1000
+			System.out.println(drink+" 잔액 "+(money-1000));
+		}else if(drink.equals("칠성사이다")) { //900
+			System.out.println(drink+" 잔액 "+(money-800));
+		}else if(drink.equals("펩시콜라")) { //800
+			System.out.println(drink+" 잔액 "+(money-800));
+		}else if(drink.equals("환타")) { //850
+			System.out.println(drink+" 잔액 "+(money-800));
+		}else if(drink.equals("제로코카콜라")) { //1100
+			System.out.println(drink+" 잔액 "+(money-800));
+		}else if(drink.equals("삼다수")) { //400
+			System.out.println(drink+" 잔액 "+(money-800));
+		}else if(drink.equals("포카리스웨트")) { //950
+			System.out.println(drink+" 잔액 "+(money-800));
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Vending machine = new Vending();
+		machine.calcChange("콜라", 10000);
+		machine.calcChange("사이다", 10000);
+	}
+	
+	
+}

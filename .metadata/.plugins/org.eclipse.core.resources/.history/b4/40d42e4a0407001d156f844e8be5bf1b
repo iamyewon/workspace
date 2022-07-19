@@ -1,0 +1,11 @@
+package project719;
+
+import javax.swing.JFrame;
+
+public class GuiEx1 {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame(); // 창하나 만들기
+		frame.setSize(500, 500);
+		frame.setVisible(true);
+	}
+}

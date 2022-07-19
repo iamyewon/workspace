@@ -1,0 +1,13 @@
+package project719;
+
+public class Engine {
+	int cc; 
+	String oil;
+	public Engine() {
+		
+	}
+	public Engine(int cc, String oil) {
+		this.cc=cc;
+		this.oil=oil;
+	}
+}
