@@ -1,0 +1,40 @@
+package project725;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class GUIEx5 {
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //x누르면 진짜 종료됨
+		f.setLayout(null);
+		f.setSize(500, 500);
+		
+		JPanel p = new JPanel();
+		
+		p.setSize(500, 200);
+		p.setLocation(0, 300);
+		//p.setLayout(null);
+		
+		f.add(p);
+		
+		JButton btn1 = new JButton("버튼1");
+		JButton btn2 = new JButton("버튼2");
+		btn1.setSize(50, 50);
+		btn2.setSize(50, 50);
+		
+		p.add(btn1);
+		p.add(btn2);
+		
+		f.setVisible(true);
+		
+		
+		
+		
+		
+	}
+}
+//JFrame 같은걸 Container 라고 하는데, JFrame은 하나만 있어야함 JFrame에 JFrame을 겹칠수x
+//JPanel 은 JFrame과 기능은 같은데, 메인이 될 수는 없고 JFrame 위에 붙여 쓸 수 있음.
+//JPanel은 기본적으로 FlowLayout 

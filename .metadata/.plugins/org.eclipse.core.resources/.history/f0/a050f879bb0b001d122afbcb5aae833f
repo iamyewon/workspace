@@ -1,0 +1,35 @@
+package project725;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class GUIEx6 {
+	public static void main(String[] args) {
+		JFrame f = new JFrame(); 
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		f.setSize(500, 800);
+		
+		JPanel pnl1 = new JPanel();
+		JPanel pnl2 = new JPanel();
+		
+	
+		JButton btn1 = new JButton("버튼1");
+		JButton btn2 = new JButton("버튼2");
+		JButton btn3 = new JButton("버튼3");
+		JButton btn4 = new JButton("버튼4");
+		btn1.setSize(70, 50);
+		btn2.setSize(70, 50);
+		
+		pnl1.add(btn1);
+		pnl1.add(btn2);
+		
+		pnl2.add(btn3);
+		pnl2.add(btn4);
+		
+		f.add(pnl1,"north");
+		f.add(pnl2,"south");
+		
+		f.setVisible(true);
+	}
+}

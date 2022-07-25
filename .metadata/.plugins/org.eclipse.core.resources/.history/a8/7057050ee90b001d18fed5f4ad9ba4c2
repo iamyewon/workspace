@@ -1,0 +1,16 @@
+package project725;
+
+import javax.swing.JPanel;
+
+public class MPanel extends JPanel {	
+	final static int BORDER_LAYOUT=0;
+		final static int FLOW_LAYOUT=1;
+	public MPanel() {
+	
+		
+		public MFrame() {
+			this(500, 400, null, BORDER_LAYOUT);
+		}
+	}
+
+}

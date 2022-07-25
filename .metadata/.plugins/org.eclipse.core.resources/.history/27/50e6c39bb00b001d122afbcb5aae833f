@@ -1,0 +1,14 @@
+package project725;
+
+import javax.swing.JFrame;
+
+public class GUIEx1 {
+	public static void main(String[] args) {
+		JFrame f = new JFrame(); //창을 만들었다.
+		f.setSize(300, 200);
+		
+		f.setVisible(true); //화면에 보여라. - 없애주면 안나타남.....
+	}
+	
+	
+}

@@ -1,0 +1,17 @@
+package project725;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class GUIEx4 {
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		f.setLayout(null);//기본 레이아웃을 없애버림
+	
+		JButton btn = new JButton("버튼");
+		f.add(btn);
+		
+		f.setSize(300, 200);
+		f.setVisible(true);
+	}
+}

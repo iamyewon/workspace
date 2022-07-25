@@ -1,0 +1,19 @@
+package project725;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class CPanel extends JPanel{ // this == JPanel
+	public CPanel() {
+		//super(); 가 없지만 존재함. JPanel 이 생성안되면 사용안되는데
+		//이부분은 안보이지만 생성되어있음.
+		//super(); <= 부모의 생성자를 반드시 불러야 하는것은 아니다.
+		//부모가 빈생성자를 가지고 있으니까 알아서 호출한다.
+		
+		
+	}
+	public CPanel(Color c) {
+		this.setBackground(c); //JPanel 이 들고 있는 메서드 
+	}
+}

@@ -1,0 +1,21 @@
+package project725;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class GUIEx8 extends JFrame{
+	public GUIEx8() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(500, 400);
+		JPanel pnl = new JPanel(); // 색상 패널을 만들고 싶다. 
+		pnl.setBackground(Color.YELLOW);//ex)new CPanel(color.RED)
+		
+		this.add(pnl);
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+		GUIEx8 ge8 = new GUIEx8();
+	}
+}

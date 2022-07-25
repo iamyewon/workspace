@@ -1,0 +1,20 @@
+package project725;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class GUIEx2 {
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		//BorderLayout을 바꿔줄것임
+		FlowLayout fl = new FlowLayout();
+		f.setLayout(fl);
+		
+		
+		JButton btn1 = new JButton("버튼1");
+		JButton btn2 = new JButton("버튼2");
+		
+		f.setSize(300, 200);
+		f.setVisible(true);
+	}
+}

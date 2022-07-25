@@ -2,7 +2,10 @@ package project719;
 
 public class Vending2 {
 		int money;
-		String drink;
+		String drink;  // 다른 메서드에서 써야할 때 .. 다른 메서드에서 안쓰면 안해줘도 됨
+		
+		//void calaChange() -> 값을 초기화 해줄때 사용..! 
+		// 굳이 필요 없음..!! prodect2 에서도 있었는데 없어도 된다고 해서 지웠음.!!! 
 		
 	void calcChange(String drink, int money) {
 		if(drink.equals("콜라")) {//1000

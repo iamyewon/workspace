@@ -1,0 +1,21 @@
+package project725;
+
+import javax.swing.JFrame;
+
+public class ExtendsEx2 extends JFrame{
+	public ExtendsEx2() {
+		this.setSize(300, 300);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+	}
+
+	public void printSize() {
+		System.out.println(this.getSize());
+	}
+
+	public static void main(String[] args) {
+		ExtendsEx2 ee = new ExtendsEx2();
+		//JFrame f = new JFrame(); 원래는 이렇게 했음.
+	}
+
+}

@@ -1,0 +1,18 @@
+package project725;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+
+public class GUIEx6 {
+public static void main(String[] args) {
+	JFrame f = new JFrame();
+	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	f.setLayout(new FlowLayout());
+	JLable lbl = new JLable("그냥 글씨");
+	JTextField tf = new JTextField(5); //입력창
+	JButton btn = new JButton("버튼");
+	JRadioButton = new JRadioButton(); // 하나만 선택
+	JCheckBox ck = new JCheckBox(); //체크창
+}
+}
