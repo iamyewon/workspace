@@ -1,0 +1,69 @@
+package project726;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+class AButton extends JButton {
+	public AButton() {
+		this.setText("A");
+	}
+}
+
+class BButton extends JButton {
+	public BButton() {
+		this.setBackground(Color.BLUE);
+	}
+}
+
+class CButton extends JButton {
+	public CButton() {
+	this.setForeground(Color.red);
+	}
+}
+
+public class MyEx extends JFrame{
+	
+	
+	
+	public MyEx() {
+		AButton a = new AButton();
+		addButton(a);
+		
+		BButton b = new BButton();
+		addButton(b);
+		
+		CButton c = new CButton();
+		addButton(c);
+		
+	}
+	
+	 public void addButton(JButton btn){
+		 this.add(btn);
+	 }
+	public static void main(String[] args) {
+AButton aButton = new AButton();
+BButton bButton = new BButton();
+CButton cButton = new CButton();
+
+}
+}
+
+
+
+// 3가지 타입의 JButton 만들어서 JButton 을 상속받는 메서드 3개 만들기.
+// AButton = new AButton() // 자동으로 글씨가 A라고 붙어잇음.
+// BButton = new BButton() // 색이 파란색임
+// CButton = new CButton() // 글자 색이 빨간색임.
+
+// public void addButton(JButton btn){// 매개변수의 다형성
+// 		xxx <= JFrame 을 상속 받았다면, this 
+// 				직접 생성했다면 JFrame 변수
+// 		xxx.add(btn);
+//}
+//
+// xxx.addButton(btn1);
+// xxx.addButton(btn2);
+// xxx.addButton(btn3);

@@ -1,0 +1,9 @@
+package project726;
+
+import javax.swing.JFrame;
+
+public class GUIEx10 {
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+	}
+}

@@ -1,0 +1,18 @@
+package project726;
+
+import javax.swing.JPanel;
+
+class APanel extends JPanel{
+	public APanel{
+		this.setBackground(Color.RED);
+	}
+}
+class BPanel extends JPanel{
+	
+}
+
+
+
+public class Ex1 {
+
+}

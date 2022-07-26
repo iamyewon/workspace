@@ -1,0 +1,21 @@
+package project726;
+
+class Ext8Parents{
+	public void printExt8Parents() {
+		System.out.println("부모 클래스");
+	}
+}
+
+class Ext8Child extends Ext8Parents{
+	public void printExt8Child() {
+		System.out.println("자식 클래스");
+	}
+}
+
+
+public class ExtendsEx8 {
+	public static void main(String[] args) {
+		Ext8Parents p = new Ext8Child();
+		p.printExt8Parents();
+	}
+}

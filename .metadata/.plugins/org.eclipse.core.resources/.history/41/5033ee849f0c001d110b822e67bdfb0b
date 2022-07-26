@@ -1,0 +1,26 @@
+package project726;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+class APanel extends JPanel{
+	public APanel(){
+		this.setBackground(Color.RED);
+	}
+}
+class BPanel extends JPanel{
+	public BPanel() {
+		this.setLayout(null);
+	}
+}
+
+public class Ex1{
+	public static void main(String[] args) {
+	JFrame jf = new JFrame();
+	jf.setSize(500, 600);
+	jf.setDefaultCloseOperation(EXIT_ON_CLOSE)
+	}
+
+}

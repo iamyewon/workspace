@@ -1,0 +1,16 @@
+package project726;
+
+public class ExtendsEx7 {
+	public static void main(String[] args) {
+		Ext6 e = new ExtendsEx6();
+		//부모     =    자식
+		Ext6 e2 = new ExtendsEx6_2();
+		Ext6 e3 = new ExtendsEx6_3();
+		Ext6 e4 = new ExtendsEx6_4();
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,48 @@
+package project726;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+//class NumButton extends JButton{
+//	public NumButton() {
+//		this.setBackground(Color.WHITE);
+//	}
+//}
+//class CalcButton extends JButton{
+//	public CalcButton() {
+//		this.setBackground(Color.GRAY);
+//	}
+//}
+//class PadPanel extends JPanel{
+//	public PadPanel() {		
+//	}
+//}
+
+public class Calculator{
+	public static void main(String[] args) {
+	JFrame jf = new JFrame();
+	jf.setSize(500, 600);
+	jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+	
+	
+	JPanel pad = new JPanel();
+	pad.setLayout(new GridLayout(4,4));
+	
+	
+	
+	 
+	 String buttonNames[] = {"7","8","9","+","6","5","4","-","3","2","1","*","C","0","=","/"}
+	 JButton buttons[] = new JButton[buttonNames.length];
+	 
+	 
+	 
+	 
+	 
+	 jf.setVisible(true);
+	}
+}

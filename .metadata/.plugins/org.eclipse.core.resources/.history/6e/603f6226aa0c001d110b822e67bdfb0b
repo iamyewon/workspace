@@ -1,0 +1,29 @@
+package project726;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+class NumButton extends JButton{
+	public NumButton() {
+		this.setBackground(Color.WHITE);
+	}
+}
+class CalcButton extends JButton{
+	public CalcButton() {
+		this.setBackground(Color.GRAY);
+	}
+}
+
+
+	
+
+public class Calculator{
+	public static void main(String[] args) {
+		
+	
+	JFrame jf = new JFrame();
+	jf.setSize(500, 600);
+	}
+}

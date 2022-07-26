@@ -1,0 +1,23 @@
+package project726;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+
+class NumButton extends JButton{
+	public NumButton() {
+		this.setBackground(Color.WHITE);
+	}
+}
+class CalcButton extends JButton{
+	public CalcButton() {
+		this.setBackground(Color.GRAY);
+	}
+}
+
+
+	
+
+public class Calculator {
+
+}
