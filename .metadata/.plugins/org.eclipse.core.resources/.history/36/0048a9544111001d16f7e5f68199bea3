@@ -1,0 +1,64 @@
+package project81;
+
+interface RemoteController { //퍼블릭 있어도 되고 없어도 되고 상관 없음
+	void turnOn();
+	void turnOff();
+	void soundUp();
+	void soundDown();
+}
+
+public class TVRC implements RemoteController{
+
+	@Override
+	public void turnOn() {
+		System.out.println("TV전원이 켜집니다.");
+	}
+
+	@Override
+	public void turnOff() {
+		System.out.println("TV전원이 꺼집니다.");
+	}
+
+	@Override
+	public void soundUp() {
+		System.out.println("TV볼륨을 높입니다");
+	}
+
+	@Override
+	public void soundDown() {
+		System.out.println("TV볼륨을 줄입니다");
+	}
+	
+	public static void main(String[] args) {
+		TVRC tvrc = new TVRC();
+		tvrc.turnOn();
+		tvrc.turnOff();
+		tvrc.soundUp();
+		tvrc.soundDown();
+	}
+}
+
+// 상위의 인터페이스를 이용하여 
+// tv리모컨, 에어컨 리모컨, 셋톱박스 리모컨 만들기
+// 각각의 특이한 메서드를 추가하셔야 합니다. 
+/*public class USBEx implements USBA {
+
+	@Override
+	public void speed() {
+	System.out.println("2.0 스피드 입니다.");
+		
+	}
+
+	@Override
+	public void printType() {
+		System.out.println("A타입, 브랜드 삼성");
+		
+	}
+	
+	public static void main(String[] args) {
+		USBEx ue = new USBEx();
+		ue.speed();
+		ue.printType();
+	}
+
+}*/

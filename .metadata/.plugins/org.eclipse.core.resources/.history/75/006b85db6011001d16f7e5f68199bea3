@@ -1,0 +1,58 @@
+package project81;
+
+import java.awt.event.WindowListener;
+
+import javax.swing.JFrame;
+
+public class WindowEvent extends JFrame implements WindowListener{
+
+	@Override
+	public void windowOpened(java.awt.event.WindowEvent e) {
+		this.setSize(300, 300);
+		this.setVisible(true);
+		this.addWindowListener(this);
+		//현재 이클래스(JFrame)에 윈도우 이벤트를 붙인다.
+		
+	}
+	
+	public static void main(String[] args) {
+		new WindowEvent();
+	}
+
+	@Override
+	public void windowClosing(java.awt.event.WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosed(java.awt.event.WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowIconified(java.awt.event.WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowDeiconified(java.awt.event.WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowActivated(java.awt.event.WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowDeactivated(java.awt.event.WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

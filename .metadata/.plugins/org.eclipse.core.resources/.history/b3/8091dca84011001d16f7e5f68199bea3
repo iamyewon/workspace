@@ -1,0 +1,10 @@
+package project81;
+
+interface RemoteController { //퍼블릭 있어도 되고 없어도 되고 상관 없음
+	void turnOn();
+	void turnOff();
+	void soundUp();
+	void soundDown();
+	
+
+}

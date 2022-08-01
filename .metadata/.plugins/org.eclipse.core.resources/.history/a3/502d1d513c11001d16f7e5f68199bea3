@@ -1,0 +1,6 @@
+package project81;
+
+public class ActionTest extends JFrame implements ActionListener{ //implements는 구현 
+	//상속을 두번 받고싶으면 상속 받은 것을 다시 상속 하면 됨. 두번은안되니까
+
+}

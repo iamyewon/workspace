@@ -1,0 +1,7 @@
+package project81;
+
+public class InterEx {
+	int MAX = 10;
+	void plus();
+	int sum();
+}

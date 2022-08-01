@@ -1,0 +1,25 @@
+package project81;
+
+public class TVMonitor implements Monitor {
+	boolean power;
+	int vol;
+	int resolution;
+	int brightness;
+	
+	@Override
+	public void turnOn() {
+		System.out.println("TV전원이 켜집니다.");
+		power = true;
+	}
+
+	@Override
+	public void turnOff() {
+		System.out.println("TV전원이 꺼집니다." + power);
+		power = false;
+	}
+	public void volUp() {
+		System.out.println("볼륨을 높입니다.");
+		vol++;
+	}
+
+}

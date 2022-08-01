@@ -1,0 +1,10 @@
+package project81;
+
+public class InterExTest implements InterEx{ //InterEx를 가져다 쓰기 위해 implements(구현한다)
+	public static void main(String[] args) {
+		//원래 내용이 없었지만 새로 쓰는것도 오버라이드
+		void plus() {}
+		int sum{return 0; }
+		}
+	}
+}

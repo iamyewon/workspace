@@ -1,0 +1,38 @@
+package project81;
+
+class ACRC implements RemoteController{
+
+	@Override
+	public void turnOn() {
+		System.out.println("에어컨 전원이 켜집니다.");
+	}
+
+	@Override
+	public void turnOff() {
+		System.out.println("에어컨 전원이 꺼집니다.");
+	}
+
+	@Override
+	public void soundUp() {
+	}
+
+	@Override
+	public void soundDown() {	
+	}
+
+	public void tempUp() {
+		System.out.println("에어컨 온도를 올립니다.");
+	}
+	public void tempDown() {
+		System.out.println("에어컨 온도를 내립니다.");
+	}
+	
+	public static void main(String[] args) {
+		ACRC acrc = new ACRC();
+		acrc.turnOn();
+		acrc.turnOff();
+		acrc.tempUp();
+		acrc.tempDown();
+	}
+	
+ }

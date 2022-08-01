@@ -1,0 +1,7 @@
+package project81;
+
+public class InterExTest implements InterEx{ //InterEx를 가져다 쓰기 위해 implements(구현한다)
+	public static void main(String[] args) {
+		
+	}
+}

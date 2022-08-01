@@ -1,0 +1,38 @@
+package project81;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class EventEx extends JFrame implements ActionListener{
+	JButton btn1,btn2,btn3;
+	
+	EventEx(){// 여기에 실행될 내용을 다쓰면 된다.
+		this.setLayout(new FlowLayout());
+		this.setSize(500, 400);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		btn1 = new JButton("Red");
+		btn2 = new JButton("Blue");
+		btn3 = new JButton("Green");
+		this.add(btn1);
+		this.add(btn2);
+		this.add(btn3);
+		btn1.addActionListener(this);// 버튼에 액션 붙이기
+		btn2.addActionListener(this);
+		btn3.addActionListener(this);
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==btn1) {
+			System.out.println("버튼1");
+		}else if(e.getSource()==btn2) {
+			System.out.println("버튼2");
+		}		
+	
+	}
+}

@@ -1,0 +1,17 @@
+package project81;
+
+abstract class HttpServlet{
+	public abstract void service();
+}
+public class HttpServletExample {
+	public static void main(String[] args) {
+		method(new LoginServlet());  //1
+		method(new FileDownloadServlet());//2
+	}
+	// LoginServlet, FileDownloadServlet 
+	// 둘다 HttpServlet 타입이다.
+	
+	public static void method(HttpServlet servlet) { //1,2가 servlet으로 들어감
+		servlet.service();
+	}
+}

@@ -1,0 +1,23 @@
+package project81;
+
+interface USBA{
+	String TYPE = "A";
+	void speed();
+	void printType();
+}
+
+public class USBEx implements USBA {
+
+	@Override
+	public void speed() {
+	System.out.println("2.0 스피드 입니다.");
+		
+	}
+
+	@Override
+	public void printType() {
+		System.out.println("A타입, 브랜드 삼성");
+		
+	}
+
+}

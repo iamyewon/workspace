@@ -1,0 +1,9 @@
+package project81;
+
+interface USB{
+	String TYPE = "A";
+}
+
+public class USBEx {
+
+}

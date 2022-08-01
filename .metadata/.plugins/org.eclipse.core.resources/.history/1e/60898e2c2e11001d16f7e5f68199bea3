@@ -1,0 +1,19 @@
+package project81;
+
+class IOParents{
+	
+}
+class IOChild extends IOParents{
+	
+}
+public class InstanceOfEx {
+public static void main(String[] args) {
+	IOParents iop = new IOChild(); 
+	//IOChild ioc = new IOParents(); 안됨
+	//IOChild ioc = (IOChild) new IOParents(); //자식보다 부모가 늦게 만들어져서 에러
+	System.out.println(iop instanceof IOParents);
+	System.out.println(iop instanceof IOChild);
+
+
+}
+}

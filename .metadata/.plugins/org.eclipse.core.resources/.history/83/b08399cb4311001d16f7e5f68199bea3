@@ -1,0 +1,36 @@
+package project81;
+
+class ACRC implements RemoteController{
+
+	@Override
+	public void turnOn() {
+
+	}
+
+	@Override
+	public void turnOff() {
+
+	}
+
+	@Override
+	public void soundUp() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void soundDown() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/*public void tempUp() {
+		
+	}
+	public void tempDown() {
+		
+	}*/
+	
+	
+	
+ }

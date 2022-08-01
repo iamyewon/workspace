@@ -1,0 +1,33 @@
+package project81;
+
+	public class SetboxRC implements RemoteController{
+
+		@Override
+		public void turnOn() {
+			System.out.println("TV전원이 켜집니다.");
+		}
+
+		@Override
+		public void turnOff() {
+			System.out.println("TV전원이 꺼집니다.");
+		}
+
+		@Override
+		public void soundUp() {
+			System.out.println("TV볼륨을 높입니다");
+		}
+
+		@Override
+		public void soundDown() {
+			System.out.println("TV볼륨을 줄입니다");
+		}
+		
+		public static void main(String[] args) {
+			TVRC tvrc = new TVRC();
+			tvrc.turnOn();
+			tvrc.turnOff();
+			tvrc.soundUp();
+			tvrc.soundDown();
+		}
+	}
+}

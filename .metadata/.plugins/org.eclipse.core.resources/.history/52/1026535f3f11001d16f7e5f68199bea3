@@ -1,0 +1,11 @@
+package project81;
+
+interface USBA{
+	String TYPE = "A";
+	void speed();
+	void printType();
+}
+
+public class USBEx {
+
+}
