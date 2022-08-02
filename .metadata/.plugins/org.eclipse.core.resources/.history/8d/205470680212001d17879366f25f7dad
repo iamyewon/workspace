@@ -1,0 +1,9 @@
+package project82;
+
+
+
+public class GUIExAwt extends Frame{
+
+}
+
+//awt는 OS의 리소스를 이용한다. JFrame은 스윙꺼.

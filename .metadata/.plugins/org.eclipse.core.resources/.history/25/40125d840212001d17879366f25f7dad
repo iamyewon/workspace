@@ -1,0 +1,15 @@
+package project82;
+
+import java.awt.Frame;
+
+import javax.swing.JFrame;
+
+public class GUIExAwt {
+	public static void main(String[] args) {
+		Frame f = new Frame();
+		JFrame jf = new JFrame();
+	}
+
+}
+
+//awt는 OS의 리소스를 이용한다. JFrame은 스윙꺼.

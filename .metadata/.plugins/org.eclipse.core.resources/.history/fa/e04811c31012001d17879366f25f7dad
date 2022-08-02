@@ -1,0 +1,19 @@
+package project82;
+
+import javax.swing.JComboBox;
+
+public class GUIExComboBox extends HFrame{
+	
+	JComboBox combo; //JComboBox에서 액션 or 아이템체인지(체크박스할때) 둘중 쓰면 됨.
+	
+	public GUIExComboBox() {
+		String[] city = {"서울","강원","충청","대전","부산","제주"};
+		combo = new JComboBox<>(city); // JComboBox 만들때 생기는 < > 는 없어도 됨 ?
+		this.add(combo);
+		this.setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		new GUIExComboBox();
+	}
+}

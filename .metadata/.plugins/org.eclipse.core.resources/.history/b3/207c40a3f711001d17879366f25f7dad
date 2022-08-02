@@ -1,0 +1,16 @@
+package project82;
+
+interface Tire{void printInfo();}
+
+class Kumho implements Tire{
+
+	@Override
+	public void printInfo() {
+		
+	}
+	
+}
+
+public class CastingEx {
+
+}

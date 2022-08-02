@@ -1,0 +1,26 @@
+package project82;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class GUIExButton extends HFrame{
+	
+	JTextField tf;
+	JLabel lbl;
+	JButton btn;
+	
+	public GUIExButton() {
+		tf = new JTextField();
+		lbl = new JLabel("여기에 글씨가 TextField에 있는 글자로 바뀝니다.");
+		btn = new JButton("클릭");
+		this.add(tf, "North");
+		this.add(lbl); // 안쓰면 센터
+		this.add(btn, "South");
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+		new GUIExButton();
+	}
+
+}

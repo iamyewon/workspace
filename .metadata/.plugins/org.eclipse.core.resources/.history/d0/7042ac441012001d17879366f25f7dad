@@ -1,0 +1,16 @@
+package project82;
+
+import javax.swing.JComboBox;
+
+public class GUIExComboBox extends HFrame{
+	
+	JComboBox combo;
+	
+	public GUIExComboBox() {
+		String[] city = {"서울","강원","충청","대전","부산","제주"};
+		combo = new JComboBox(city);
+	}
+	public static void main(String[] args) {
+		new GUIExComboBox();
+	}
+}

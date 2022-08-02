@@ -1,0 +1,19 @@
+package project82;
+
+import javax.swing.JList;
+
+public class GUIExList extends HFrame {
+	JList list;	
+	
+	public GUIExList() {
+		String[] city = {"서울","강원","충청","대전","부산","제주"};
+		list = new JList<>(city); 
+		this.add(list)
+	}
+	
+	public static void main(String[] args) {
+		new GUIExList();
+	}
+	
+	
+}

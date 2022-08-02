@@ -1,0 +1,26 @@
+package project82;
+
+import javax.swing.JButton;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class GUIExTextArea extends HFrame{
+	JTextArea ta;
+	JTextField tf;
+	JButton btn;
+	
+	public GUIExTextArea() {
+		ta = new JTextArea();
+		tf = new JTextField();
+		btn = new JButton("Å¬¸¯");
+		this.add(tf,"North");
+		this.add(ta);
+		this.add(btn,"South");
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new GUIExTextArea();
+	}
+
+}

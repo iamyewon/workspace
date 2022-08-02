@@ -1,0 +1,16 @@
+package project82;
+
+import javax.swing.JFrame;
+
+public class GUIEx1 extends JFrame {
+	void printGui() {
+		System.out.println("ÇÁ¸°Æ®");
+	}
+	
+	
+	public static void main(String[] args) {
+		GUIEx1 g = new GUIEx1();
+		g.printGui();
+	}
+	
+}

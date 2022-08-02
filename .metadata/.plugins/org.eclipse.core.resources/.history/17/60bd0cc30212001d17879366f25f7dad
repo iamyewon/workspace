@@ -1,0 +1,19 @@
+package project82;
+
+import java.awt.Frame;
+
+import javax.swing.JFrame;
+
+public class GUIExAwt {
+	public static void main(String[] args) {
+		Frame f = new Frame();
+		f.setSize(200, 300);
+		// f.setDefalut~  하는 자동종료 같은건 없음.
+		JFrame jf = new JFrame();
+		jf.setSize(200, 300);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 자동종료 기능 있음.
+	}
+
+}
+
+//awt는 OS의 리소스를 이용한다. JFrame은 스윙꺼.

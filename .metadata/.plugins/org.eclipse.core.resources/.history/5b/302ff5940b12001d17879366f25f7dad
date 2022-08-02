@@ -1,0 +1,42 @@
+package project82;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class GUIExButton extends HFrame implements ActionListener{
+	
+	JTextField tf;
+	JLabel lbl;
+	JButton btn;
+	
+	public GUIExButton() {
+		tf = new JTextField();
+		lbl = new JLabel("여기에 글씨가 TextField에 있는 글자로 바뀝니다.");
+		btn = new JButton("클릭");
+		this.add(tf, "North");     // 1. 여기 입력하고 
+		this.add(lbl); // 안쓰면 센터    // 3. 여기로 내용이 들어감
+		this.add(btn, "South");    // 2. 버튼누르면
+		this.setVisible(true);
+	}
+
+	void textMove() {
+		System.out.println("ok");
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==btn) {
+			textMove();
+		
+	}
+
+	}	
+	
+	public static void main(String[] args) {
+		new GUIExButton();
+	}
+}

@@ -1,0 +1,41 @@
+package project82;
+
+interface Tire{void printInfo();}
+
+class Kumho implements Tire{
+
+	@Override
+	public void printInfo() { }
+	public void setKumho() { }
+	
+}
+
+class Hankook implements Tire{
+
+	@Override
+	public void printInfo() { }
+	public void setHankook() { }
+	
+}
+
+class Michelin extends Hankook{
+	void setMichelin() {}
+}
+
+
+public class CastingEx {
+	public static void main(String[] args) {
+	Hankook h = new Hankook();
+	h.setHankook();
+	Kumho k = new Kumho();
+	k.setKumho();
+	
+	Tire t1 = new Hankook();
+	Tire t2 = new Kumho();
+	// t1.setHankook(); // 되지 않음
+	Tire t2 = new Kumho();
+	
+	Hankook m = new Michelin();
+	m.setMichelin(); // 상속일때도 당연히 안됨.
+	}
+}

@@ -1,0 +1,33 @@
+package project82;
+
+interface Tire{void printInfo();}
+
+class Kumho implements Tire{
+
+	@Override
+	public void printInfo() { }
+	public void setKumho() { }
+	
+}
+
+class Hankook implements Tire{
+
+	@Override
+	public void printInfo() { }
+	public void setHankook() { }
+	
+}
+
+public class CastingEx {
+	public static void main(String[] args) {
+	Hankook h = new Hankook();
+	Kumho k = new Kumho();
+	k.setKumho();
+	
+	Tire t1 = new Hankook();
+	Tire t2 = new Kumho();
+	t1.setHankook(); // 되지 않음
+	Tire t2 = new Kumho();
+	
+	}
+}

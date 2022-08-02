@@ -1,0 +1,21 @@
+package project82;
+
+interface Number{}
+
+class Inte implements Number{}
+class Floa implements Number{}
+class Doubl implements Number{}
+
+
+public class Polymorphism {
+	
+	void printNumber(Inte i) {}
+	void printNumber(Floa f) {}
+	void printNumber(Doubl d) {}
+	//메서드의 이름은 같지만 매개변수 개수 등이 달라서 오버로딩
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

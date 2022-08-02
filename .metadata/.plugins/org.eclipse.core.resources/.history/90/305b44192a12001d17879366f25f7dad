@@ -1,0 +1,60 @@
+package project82;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.ListSelectionModel;
+
+public class GUIExList extends HFrame implements ActionListener{
+	JList list, list2;	
+	JButton btn1, btn2;
+	JPanel jpn;
+	DefaultListModel model1;
+	DefaultListModel model2;
+
+	public GUIExList() {
+		String[] city = {"서울","강원","충청","대전","부산","제주"};
+		String[] city2 = {"광주","전라","경상"};
+		// ComboBox는 하나만 선택 할 수 있는데 list 는 쉬프트나 컨트롤키 누르고 여러개 선택 가능함
+		model1 = new DefaultListModel<>();
+		model2 = new DefaultListModel<>();
+		model1.add(, city);
+		
+		list = new JList<>(model1); 
+		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // 하나만 선택하도록 하는 기능
+		list2 = new JList<>(model2);
+		list2.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		
+		btn1 = new JButton("==>");
+		btn2 = new JButton("<==");
+		jpn = new JPanel();
+		jpn.setLayout(new GridLayout(0,2));
+		
+		this.add(jpn,"Center");
+		jpn.add(list);
+		jpn.add(list2);
+		
+		this.add(btn1,"North");
+		this.add(btn2,"South");
+		this.setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		new GUIExList();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

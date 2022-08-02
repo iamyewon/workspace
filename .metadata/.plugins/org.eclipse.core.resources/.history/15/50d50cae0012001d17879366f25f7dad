@@ -1,0 +1,43 @@
+package project82;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class GUIEx1 extends JFrame implements ActionListener{
+	JButton btn;
+	public GUIEx1() {
+		this.setSize(200, 200);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		btn = new JButton();
+		btn.addActionListener(this);
+		this.add(btn);
+		this.setVisible(true);
+	}
+	
+	void printGui() {
+		System.out.println("프린트");
+	}
+	
+		@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==btn) {
+			printGui(); // 이벤트가 일어나면 메서드를 실행시킴.
+			// 이벤트 드리븐 프로그래밍
+			// 각 버튼마다 이벤트를 실행시킴.
+			// 이벤트 일어날때마다 각 내용을 쓰는게아니라 메서드호출
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+	/*	GUIEx1 g = new GUIEx1();
+		g.printGui();*/
+		new GUIEx1();
+	}
+
+
+	
+}

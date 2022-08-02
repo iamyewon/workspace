@@ -1,0 +1,32 @@
+package project82;
+
+import javax.swing.JButton;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class GUIExList2 extends HFrame{
+	
+	JTextField tf;
+	JButton btnAdd, btnDel;
+	JList list;
+	
+	public GUIExList2() {
+		tf = new JTextField(15);
+		btnAdd = new JButton("추가");
+		btnDel = new JButton("삭제");
+		JPanel pnl = new JPanel();
+		pnl.add(tf);
+		pnl.add(btnAdd);
+		pnl.add(btnDel);
+		list = new JList();
+		this.add(pnl, "North");
+		this.add(list);
+		this.setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		new GUIExList2();
+	}
+}

@@ -1,0 +1,26 @@
+package project82;
+
+import javax.swing.JList;
+import javax.swing.ListSelectionModel;
+
+public class GUIExList extends HFrame {
+	JList list, list2;	
+
+	public GUIExList() {
+		String[] city = {"서울","강원","충청","대전","부산","제주"};
+		// combobox는 하나만 선택 할 수 있는데 list 는 쉬프트나 컨트롤키 누르고 여러개 선택 가능함
+		list = new JList<>(city); 
+		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // 하나만 선택하도록 하는 기능
+		list2 = new JList<>(city);
+		
+		this.add(list);
+		this.add(list2)
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new GUIExList();
+	}
+	
+	
+}

@@ -1,0 +1,11 @@
+package project82;
+
+public class GUIExList2 extends HFrame{
+	public GUIExList2() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new GUIExList2();
+	}
+}
