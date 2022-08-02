@@ -1,7 +1,0 @@
-package project725;
-
-import javax.swing.JPanel;
-
-public class MPanel extends JPanel {
-
-}

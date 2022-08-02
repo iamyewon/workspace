@@ -1,9 +1,0 @@
-package project725;
-
-public class GUIEx1 {
-	public static void main(String[] args) {
-		JFrame f = new JFrame;	
-	}
-	
-	
-}
